@@ -1,0 +1,3 @@
+
+** 为什么用SpringBoot
+> Spring Data + JPA 本身就是为了简化我们对数据库的操作，使用SpringBoot如虎添冀
