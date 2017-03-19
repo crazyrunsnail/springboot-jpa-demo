@@ -1,3 +1,20 @@
 
-** 为什么用SpringBoot
-> Spring Data + JPA 本身就是为了简化我们对数据库的操作，使用SpringBoot如虎添冀
+** 为什么用SpringBoot?
+Spring Data + JPA 本身就是为了简化我们对数据库的操作，使用SpringBoot如虎添冀！
+
+1. 简化了tomcat的配置
+2. 简化了配置文件
+3. 简化了JPA的配置
+4. 简化了日志流程
+
+** 生成步聚
+
+1. 到官网https://start.spring.io/
+2. 检索web与JPA，下载
+3. 将下载的文件解压导入IDE
+4. 下载依赖
+5. 配置文件application.properties 和 application-dev.yml
+6. 写个Repository、Service以及Controller
+7. 运行Main方法
+8. Enjoy It!
+
