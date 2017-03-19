@@ -1,0 +1,37 @@
+server:
+  port: 8008
+  tomcat:
+    uri-encoding: UTF-8
+
+spring:
+  profiles: dev
+  resources:
+    static-locations: classpath:/static/
+    cache-period: 0
+    chain:
+      cache: false
+  mvc:
+
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        strategy: org.hibernate.cfg.ImprovedNamingStrategy
+      use-new-id-generator-mappings: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+
+
+
+  datasource:
+    name: dev
+    driver-class-name: com.mysql.jdbc.Driver
+#spring.datasource.url=jdbc\:mysql\://192.168.1.20\:3306/cr_patient?characterEncoding\=utf-8&autoReconnect\=true
+    url: jdbc:mysql://localhost:3306/jpa?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&characterSetResults=UTF-8
+    username: root
+    password: mysql
+
+
